@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<form action="/" method="post">
+    <input id="taskInput" type="text" name="task">
+    <input id="addBtn" type="submit" value="ADD">
+</form>
+<ul id="list">
+    {{#each todos as |t|}}
+        <li>{{t.task}}</li>
+    {{/each}}
+</ul>
+</body>
+</html>
