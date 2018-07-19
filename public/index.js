@@ -7,8 +7,8 @@ $(function () {
         console.log(data);
         list.empty();
         for(let i=0; i<data.length;i++){
-            console.log("Frontend",i.task);
-            list.append(`<li>${i.task}</li>`)
+            console.log("Frontend",data[i].task);
+            list.append(`<li>${data[i].task}</li>`)
         }
     }
 
